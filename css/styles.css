@@ -1,0 +1,224 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url("../img/fondo.jpg");
+    background-size: cover;
+}
+
+#ejemplo{
+    width: 100%;
+    text-align: center;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+#ejemplo .fila{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    padding-top: 120px;
+}
+
+.col-izq, .col-der{
+    width: 50%;
+    text-align: center;
+    border: 1px solid #ffff;
+    background: #00000055;
+    padding: 40px;
+    min-height: 600px;
+}
+
+h1{
+    font-size: 40px;
+    color:#c04cff;
+    padding: 20px;
+    border-bottom: 1px solid #ffff ;
+}
+
+button{
+    border-radius: 10px;
+    background: #fff;
+    color: #000;
+    padding: 10px 10px;
+    margin: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+button:hover{
+    transform: scale(0.8);
+    background: #000;
+    color: #fff;
+}
+
+#figura{
+    width: 210px;
+    height: 210px;
+    background: #ffffff;
+    margin: 100px auto;
+    transition: 1s;
+}
+#figura.circulo{
+    transform: scale(1.8) rotate(360deg);
+    border-radius: 50%;
+    background: #8b17ff;
+}
+#figura.rectangulo{
+    height: 280px;
+    background: #f26bbe;
+}
+
+#figura.right{
+    transform: translateX(200px);
+}
+
+#figura.degradado{
+    background: linear-gradient(to right, #9a1be8, #b277c5, #b798c8, #f1d8f8, #eddef4);
+}
+
+#figura.gif{
+    background: url(../img/giif.gif);
+    background-size: contain;
+}
+
+#figura.luna{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #9fb0df;
+    box-shadow: 0 0 20px #ffff,
+                inset -50px 0 30px #585858;
+}
+
+
+#figura.estrella{
+    background: transparent;
+    position: relative;
+    height: 0;
+    width: 0;
+    border-bottom: 100px solid #8ae0e0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+}
+
+#figura.estrella::after{
+    background: transparent;
+    position: absolute;
+    border-top: 100px solid #8ae0e0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    content: "";
+    top: 30px;
+    left: -50px;
+}
+
+#figura.triangulo{
+    background: transparent;
+    border: 150px solid transparent;
+    border-top: 0;
+    border-bottom: 300px solid rgb(49, 2, 61);
+} 
+
+#figura.top{
+    transform: translateY(-200px);
+}
+
+#figura.Bottom{
+    transform: translateY(150px);
+}
+
+#figura.Left{
+    transform: translateX(-200px);
+}
+
+#figura.Right{
+    transform: translateX(200px);
+}
+
+#figura.Diagonal{
+    transform: translate(100px, 100px);
+}
+
+body.fondo{
+    background-image: url(../img/fondo12.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#panel-lateral{
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    left: -450px;
+    top: 0;
+    z-index: 9 ;
+    background: #a258ec;
+    transition: 1s;
+}
+    
+#panel-lateral.active{
+    left: 0;
+}
+
+#panel-lateral h2{
+    color: #000;
+    font-size: 40px;
+    padding: 40px 30px;
+}
+
+#panel-lateral ul{
+    width: 80%;
+    margin: 20px auto;
+}
+
+#panel-lateral ul a{
+    display: block;
+    padding: 20px;
+    background: #000;
+    color: #ffffff;
+    margin: 20px 0;
+    text-decoration: none;
+    font-size: 22px;
+    transition: .5s;
+}
+
+#panel-lateral ul a:hover{
+    border-radius: 20px;
+    background: #ffffff;
+    color: #000;
+}
+
+#panel-superior{
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: -400px;
+    z-index: 9;
+    background: #9a1be8;
+    transition: 1s;
+}
+
+#panel-superior.active{
+    top: 0;
+}
+
+#panel-superior h2{
+    font-size: 40px;
+}
+
+    
+
+
+
+
